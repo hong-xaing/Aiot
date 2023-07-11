@@ -11,4 +11,4 @@ git clone
 
 git add .
 ```
-close this
+README conflict
