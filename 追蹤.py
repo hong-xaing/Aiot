@@ -12,5 +12,5 @@ print(my_atk-my_blood)
 # ------------------------------------------------------------------------------------------
 def_ = method()
 def_.set_defense(20)
-show_def1 = def_.show_defense()
-print(my_atk-(my_blood/(my_blood*show_def1)))
+my_def = def_.show_defense()
+print(my_def)
