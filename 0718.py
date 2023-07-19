@@ -34,10 +34,10 @@
 class Email:
     def set_address(self,address):
         print(address)
-    def set_name(firstName,lastName):
+    def set_name(self,firstName,lastName):
         print("你的名字:"+firstName)
-
         print("你的姓氏:"+lastName)
+        # self.mailLastName
 toTaichungMail = Email()
 toTaichungMail.set_address("台中市西屯區")
 youname = Email()
@@ -45,3 +45,4 @@ youname = Email()
 # lastName = input("請輸入你的姓氏 : ")
 # youname.set_name(firstName,lastName)
 youname.set_name("鴻祥","呂")
+
