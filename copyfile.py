@@ -14,7 +14,7 @@ from openpyxl import Workbook
 
 # 讀取CSV文件
 # a= "111"
-with open('//Users//lvhongxiang//Documents//大專分析//e4325910e612f73e95d612318b759e21_export.csv', 'r', encoding='utf-8') as file:
+with open('//Users//lvhongxiang//Documents//大專分析//A17000000J-030144-MKw.csv', 'r', encoding='utf-8') as file:
     csv_data = list(csv.reader(file))
 
 # 創建一個新的XLSX文件
@@ -27,4 +27,4 @@ for row in csv_data:
     sheet.append(row)
 
 # 保存XLSX文件
-workbook.save('職場分析2.xlsx')
+workbook.save('職場分析3.xlsx')
