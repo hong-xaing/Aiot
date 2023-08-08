@@ -16,7 +16,7 @@ def user_move():
     # except:
     #     move = input ("請重新輸入你的位置：")
     #     print("你現在的位置:"+ move)
-    
+    # 1
 PORT = "COM1"
 try:
     master = ms.initial()
