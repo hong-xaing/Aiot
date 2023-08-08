@@ -1,4 +1,4 @@
-
+# 機械控制 參考TC100
 import serial
 import modbus_tk
 from modbus_tk import modbus_rtu
