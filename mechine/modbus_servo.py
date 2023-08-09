@@ -13,20 +13,14 @@ def initial():
     return master
                         # servo Num ,寫入ＯＲ讀取,開始(16進位),要跑幾個,清單數字
 def servo_on(master):
-    try:     
-        master.execute(3,cst.WRITE_MULTIPLE_REGISTERS,0x2042,1,[1])    #寫入
-        value = master.execute(3,cst.READ_HOLDING_REGISTERS,0x100C,1)      #讀取
-        print (value)
-    except:
-        print("error")
+    master.execute(3,cst.WRITE_MULTIPLE_REGISTERS,0x2042,1,[1])    #寫入
+    value = master.execute(3,cst.READ_HOLDING_REGISTERS,0x100C,1)      #讀取
+    print (value)
+ 
 def servo_off(master):
-    try:
-        master.execute(3,cst.WRITE_MULTIPLE_REGISTERS,0x2042,1,[1])    #寫入
-        value = master.execute(3,cst.READ_HOLDING_REGISTERS,0x100C,0)      #讀取
-        print (value)
-    except:
-        print("error")
-
+    master.execute(3,cst.WRITE_MULTIPLE_REGISTERS,0x2042,1,[1])    #寫入
+    value = master.execute(3,cst.READ_HOLDING_REGISTERS,0x100C,0)      #讀取
+    print (value)
 def end(master):
     master.close()
 
