@@ -43,12 +43,26 @@ def target():
     message = ui.lineEdit.text()
     print(message)
 
+start = False
+def button2_click():
+    global start
+    if start:
+        start= False
+        timmer.stop()
+        print("timmer stop")
+    else:
+        start = True
+        timmer.start(1000)
+
+def count():
+    print("hi")
 
 app =QApplication(sys.argv)
 widget = QWidget()
 ui = Ui_Dialog()
 ui.setupUi(widget)
-
+timmer = Qtime()
+timmer.timeont.connect(count)
 ui.pushButton.clicked.connect(button_click)
 ui.pushButton_2.clicked.connect(button_click1)
 ui.pushButton_3.clicked.connect(target)
