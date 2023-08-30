@@ -42,3 +42,19 @@ insert into SC values('01' , '01' , 80),
 ('07' , '02' , 89),
 ('07' , '03' , 98);
 ————————————————
+
+select sc.Sid, sname, COUNT(score), sum(score) 
+from sc, student
+where sc.Sid=student.Sid
+group by sc.Sid, sname;
+
+select cname, COUNT(score), sum(score), avg(score)
+from sc, course
+where sc.cid=course.cid
+group by cname;
+
+select sname, COUNT(score), sum(score) 
+from sc, student
+where sc.Sid = student.Sid
+group by sname
+having sum(score)>150 and count(score)>2;
